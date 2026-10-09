@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 2,
+  "channel": "stable",
+  "repositories": {
+    "mod": {
+      "github": {
+        "owner": "CH3NGYZ",
+        "repo": "Overcooked-2-HostUtilities-Stable-Releases",
+        "branch": "main"
+      },
+      "gitee": {
+        "owner": "CH3NGYZ",
+        "repo": "Overcooked-2-HostUtilities-Stable-Releases",
+        "branch": "main"
+      }
+    },
+    "resources": {
+      "github": {
+        "owner": "CH3NGYZ",
+        "repo": "Overcooked-2-HostUtilities-ResourceFiles",
+        "branch": "main"
+      },
+      "gitee": {
+        "owner": "CH3NGYZ",
+        "repo": "Overcooked-2-HostUtilities-Resources",
+        "branch": "main"
+      }
+    }
+  },
+  "platforms": {
+    "github": {
+      "rawTemplate": "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}",
+      "releaseApiTemplate": "https://api.github.com/repos/{owner}/{repo}/releases/tags/{tag}",
+      "releasePageTemplate": "https://github.com/{owner}/{repo}/releases/tag/{tag}"
+    },
+    "gitee": {
+      "rawTemplate": "https://gitee.com/{owner}/{repo}/raw/{branch}/{path}",
+      "releaseApiTemplate": "https://gitee.com/api/v5/repos/{owner}/{repo}/releases/tags/{tag}",
+      "attachmentsApiTemplate": "https://gitee.com/api/v5/repos/{owner}/{repo}/releases/{releaseId}/attach_files",
+      "releasePageTemplate": "https://gitee.com/{owner}/{repo}/releases/tag/{tag}"
+    }
+  },
+  "proxies": [
+    {
+      "id": "gh-h233",
+      "name": "gh.h233.eu.org",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.h233.eu.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-ddlc",
+      "name": "gh.ddlc.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.ddlc.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-proxy-org",
+      "name": "gh-proxy.org",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh-proxy.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "cdn-gh-proxy-org",
+      "name": "cdn.gh-proxy.org",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://cdn.gh-proxy.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "edgeone-gh-proxy-org",
+      "name": "edgeone.gh-proxy.org",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://edgeone.gh-proxy.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "cors-isteed",
+      "name": "cors.isteed.cc",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://cors.isteed.cc/{url_no_scheme}",
+      "enabled": true
+    },
+    {
+      "id": "ghproxy-it",
+      "name": "ghproxy.it",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghproxy.it/{url}",
+      "enabled": true
+    },
+    {
+      "id": "github-boki",
+      "name": "github.boki.moe",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://github.boki.moe/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-jasonzeng",
+      "name": "gh.jasonzeng.dev",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.jasonzeng.dev/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-monlor",
+      "name": "gh.monlor.com",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.monlor.com/{url}",
+      "enabled": true
+    },
+    {
+      "id": "github-geekery",
+      "name": "github.geekery.cn",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://github.geekery.cn/{url}",
+      "enabled": true
+    },
+    {
+      "id": "github-ednovas",
+      "name": "github.ednovas.xyz",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://github.ednovas.xyz/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghfile-geekertao",
+      "name": "ghfile.geekertao.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghfile.geekertao.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghp-keleyaa",
+      "name": "ghp.keleyaa.com",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghp.keleyaa.com/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-chjina",
+      "name": "gh.chjina.com",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.chjina.com/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghpxy-hwinzniej",
+      "name": "ghpxy.hwinzniej.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghpxy.hwinzniej.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "cdn-crashmc",
+      "name": "cdn.crashmc.com",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://cdn.crashmc.com/{url}",
+      "enabled": true
+    },
+    {
+      "id": "git-yylx",
+      "name": "git.yylx.win",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://git.yylx.win/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gitproxy-mrhjx",
+      "name": "gitproxy.mrhjx.cn",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gitproxy.mrhjx.cn/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghproxy-cxkpro",
+      "name": "ghproxy.cxkpro.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghproxy.cxkpro.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-xxooo",
+      "name": "gh.xxooo.cf",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.xxooo.cf/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-idayer",
+      "name": "gh.idayer.com",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.idayer.com/{url}",
+      "enabled": true
+    },
+    {
+      "id": "down-npee",
+      "name": "down.npee.cn",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://down.npee.cn/?{url}",
+      "enabled": true
+    },
+    {
+      "id": "raw-ihtw",
+      "name": "raw.ihtw.moe",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://raw.ihtw.moe/{url_no_scheme}",
+      "enabled": true
+    },
+    {
+      "id": "xget",
+      "name": "Xget",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://xget.xi-xu.me/gh/{github_path}",
+      "enabled": true
+    },
+    {
+      "id": "gh-zwy",
+      "name": "gh.zwy.one",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://gh.zwy.one/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghproxy-monkeyray",
+      "name": "ghproxy.monkeyray.net",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghproxy.monkeyray.net/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghproxy-net",
+      "name": "ghproxy.net",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghproxy.net/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghfast",
+      "name": "ghfast.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://ghfast.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "wget-la",
+      "name": "wget.la",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://wget.la/{url}",
+      "enabled": true
+    },
+    {
+      "id": "oc2gh-release",
+      "name": "oc2gh.ch3ng.top",
+      "platform": "github",
+      "purposes": [
+        "release"
+      ],
+      "template": "https://oc2gh.ch3ng.top/{url_path}",
+      "enabled": true
+    },
+    {
+      "id": "wget-la-raw",
+      "name": "wget.la",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://wget.la/{url}",
+      "enabled": true
+    },
+    {
+      "id": "hk-gh-proxy-raw",
+      "name": "hk.gh-proxy.org",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://hk.gh-proxy.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "ghfast-raw",
+      "name": "ghfast.top",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://ghfast.top/{url}",
+      "enabled": true
+    },
+    {
+      "id": "gh-catmak-raw",
+      "name": "gh.catmak.name",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://gh.catmak.name/{url}",
+      "enabled": true
+    },
+    {
+      "id": "fastly-jsdelivr",
+      "name": "Fastly JSDelivr",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://fastly.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}",
+      "enabled": true
+    },
+    {
+      "id": "cdn-gh-proxy-raw",
+      "name": "cdn.gh-proxy.org",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://cdn.gh-proxy.org/{url}",
+      "enabled": true
+    },
+    {
+      "id": "g-blfrp-raw",
+      "name": "g.blfrp.cn",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://g.blfrp.cn/{url}",
+      "enabled": true
+    },
+    {
+      "id": "oc2gh-raw",
+      "name": "oc2gh.ch3ng.top",
+      "platform": "github",
+      "purposes": [
+        "raw"
+      ],
+      "template": "https://oc2gh.ch3ng.top/{url_path}",
+      "enabled": true
+    },
+    {
+      "id": "oc2ghapi",
+      "name": "oc2ghapi.ch3ng.top",
+      "platform": "github",
+      "purposes": [
+        "api"
+      ],
+      "template": "https://oc2ghapi.ch3ng.top/{url_path}",
+      "enabled": true
+    },
+    {
+      "id": "oc2gtapi",
+      "name": "oc2gtapi.ch3ng.top",
+      "platform": "gitee",
+      "purposes": [
+        "api"
+      ],
+      "template": "https://oc2gtapi.ch3ng.top/{url_path}",
+      "enabled": true
+    }
+  ],
+  "mod": {
+    "releases": [
+      {
+        "version": "1.8.7",
+        "tag": "v1.8.7",
+        "minResourceVersion": "1.0.0",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "这是《街机MOD》v1.8.7 稳定版的更新信息。如果你看到了这条消息，证明街机MOD在升级过程中误取消了“接收测试版更新”的开关，忽略此稳定版更新，并在配置管理器中重新打开“接收测试版更新”即可。",
+        "changelogs": {
+        "zh-cn": "这是《街机MOD》v1.8.7 稳定版的更新信息。如果你看到了这条消息，证明街机MOD在升级过程中误取消了“接收测试版更新”的开关，忽略此稳定版更新，并在配置管理器中重新打开“接收测试版更新”即可。",
+        "en-us": "This is the update information for the stable version of *Arcade MOD* v1.8.7. If you see this message, it means that during the upgrade process, Arcade MOD accidentally turned off the “Receive beta updates” switch. Please ignore this stable version update, and re-enable “Receive beta updates” in the Configuration Manager.",
+        "ko-kr": "이것은 《아케이드 MOD》 v1.8.7 안정 버전의 업데이트 정보입니다. 이 메시지를 보셨다면, 아케이드 MOD가 업그레이드 과정에서 “베타 업데이트 수신” 스위치를 실수로 끈 것입니다. 이 안정 버전 업데이트는 무시하고, 구성 관리자에서 “베타 업데이트 수신”을 다시 켜 주세요."
+        }
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 50856119,
+            "sha256": "4a1844a6837c44c0131908a747f5caa8f15e325b7de819fc8cc58d296adf407a"
+          }
+        ],
+        "publishedAt": "2026-10-01T12:48:58Z"
+      },
+    ]
+  },
+  "resources": {
+    "releases": [
+      {
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "minModVersion": "1.8.7",
+        "resourceFormat": 1,
+        "sourceCommit": "00083db617a1f30f030750b1117cd48637c8da4b",
+        "changelog": "第一次单独拆分资源包, 去除内置的配置管理器, 资源包中不再包含配置管理器, 请自行安装ConfigurationManager, 或在厨房MOD管理器中自行配置",
+        "assets": [
+          {
+            "name": "HostUtilities.Resources.zip",
+            "size": 57265921,
+            "sha256": "2d826d2ac7c4c8ca89e79c884047a73763814c14a91e80b50404f399ffad8c15"
+          },
+          {
+            "name": "HostUtilities.Resources.manifest",
+            "size": 69710,
+            "sha256": "d961fbe9c6215fa2ba1b71f5099949a07b51f99606e37320507238aebdb5234c"
+          },
+          {
+            "name": "release-metadata.json",
+            "size": 1346,
+            "sha256": "854528a56752ae441fa86622553e65a0bdd8ce9b8c0aa54eb7b611b0ae1af1a7"
+          }
+        ],
+        "changelogs": {
+          "zh-cn": "第一次单独拆分资源包, 去除内置的配置管理器, 资源包中不再包含配置管理器, 请自行安装ConfigurationManager, 或在厨房MOD管理器中自行配置",
+          "en-us": "The first independent resource package release, the built-in configuration manager has been removed, the resource package no longer contains the configuration manager, please install ConfigurationManager yourself, or configure it in the Kitchen MOD Manager.",
+          "ko-kr": "첫 번째 독립 리소스 패키지 릴리스, 내장 구성 관리자가 제거되었으며 리소스 패키지에는 더 이상 구성 관리자가 포함되지 않습니다. ConfigurationManager를 직접 설치하거나 Kitchen MOD Manager에서 구성하십시오."
+        },
+        "publishedAt": "2026-10-08T15:05:06Z",
+        "changelogSha256": "91e8bcd286ecbee9f9bcc467e6c82ed851010df97230366db3ebbb07f4365adf",
+        "changelogsSha256": "ff0283021da0406158114ecad8e62216906c342626ea30e9195ac0a0298263c1"
+      }
+    ]
+  },
+  "configurationmanager": {
+    "tag": "v19.0",
+    "version": "19.0",
+    "url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v19.0/BepInEx.ConfigurationManager_BepInEx5_v19.0.zip",
+    "size": 84258,
+    "sha256": "eed83f6e6accbdd0c3771f3061a6ae05b979b9b9b8a00dead69aabc1bf5fe950",
+    "changelog": "# What's changed\r\n- IL2CPP - Upgrade to BepInEx6 be.785 (support games without legacy input)\r\n- Set KeyboardShortcut package as obsolete - remove it from your project and use KeyboardShortcut from BepInEx6 be.785+ instead\r\n- Added targetFrameworks to nuget package\r\n\r\n**Full Changelog**: https://github.com/BepInEx/BepInEx.ConfigurationManager/compare/v18.4.1...v19.0"
+  }
+}
