@@ -7,19 +7,39 @@ on:
 jobs:
   sync-release:
     name: Sync GitHub Release to Gitee
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
     permissions:
       contents: read
 
     steps:
-      - name: Sync GitHub Release to Gitee
-        uses: trustedinster/sync-release-gitee@v1.3
-        with:
-          gitee_owner: ${{ github.repository_owner }}
-          gitee_repo: ${{ github.event.repository.name }}
+      - name: Download release2gitee
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "https://github.com/hepengju/release2gitee/releases/download/v1.2.2/release2gitee-x86_64-pc-windows-msvc.zip" `
+            -OutFile "release2gitee.zip"
+
+      - name: Unzip
+        shell: pwsh
+        run: |
+          Expand-Archive -Path "release2gitee.zip" -DestinationPath "." -Force
+
+      - name: Run release2gitee
+        shell: pwsh
+        env:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           gitee_token: ${{ secrets.GITEE_TOKEN }}
-          github_owner: ${{ github.repository_owner }}
-          github_repo: ${{ github.event.repository.name }}
-          gitee_upload_retry_times: 3
-          debug: false
+        run: |
+          $Exe = ".\release2gitee.exe"
+          & $Exe `
+            --github-owner ${{ github.repository_owner }} `
+            --github-repo ${{ github.event.repository.name }} `
+            --github-token $env:github_token `
+            --gitee-owner ${{ github.repository_owner }} `
+            --gitee-repo ${{ github.event.repository.name }} `
+            --gitee-token $env:gitee_token `
+            --gitee-branch main `
+            --github-latest-release-count 30 `
+            --gitee-retain-release-attach-files-count 10 `
+            --release-body-url-replace `
+            --latest-json-url-replace `
+            -v
