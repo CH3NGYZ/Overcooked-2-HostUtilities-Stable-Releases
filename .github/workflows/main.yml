@@ -13,6 +13,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      # 1. 只下载当前 GitHub Release 的附件
       - name: Download Current Release Assets
         shell: pwsh
         env:
@@ -27,24 +28,38 @@ jobs:
 
           gh release download "$env:RELEASE_TAG" `
             --repo "$env:GITHUB_REPOSITORY" `
-            --dir "$AssetDir"
+            --dir "$AssetDir" `
+            --skip-existing
 
           $Assets = @(Get-ChildItem -Path $AssetDir -File)
 
-          if ($Assets.Count -eq 0) {
-            Write-Host "当前 Release 没有附件，仅创建 Gitee Release。"
-          } else {
-            Write-Host "当前 Release 附件："
-            $Assets | ForEach-Object {
-              Write-Host " - $($_.Name)"
-            }
+          Write-Host "当前版本：$env:RELEASE_TAG"
+          Write-Host "附件数量：$($Assets.Count)"
+
+          $Assets | ForEach-Object {
+            Write-Host "附件：$($_.Name)"
           }
 
-      - name: Create Gitee Release
+      # 2. 尝试删除 Gitee 上相同 Tag 的旧 Release
+      #    即使删除失败，也继续执行后续步骤
+      - name: Delete Existing Gitee Release
+        id: delete_release
+        continue-on-error: true
+        uses: nicennnnnnnlee/action-gitee-release@master
+        with:
+          gitee_action: delete_release
+          gitee_owner: ${{ github.repository_owner }}
+          gitee_repo: ${{ github.event.repository.name }}
+          gitee_token: ${{ secrets.GITEE_TOKEN }}
+          gitee_tag_name: ${{ github.event.release.tag_name }}
+
+      # 3. 创建当前版本并上传附件
+      #    每个附件最多重试 3 次
+      - name: Create Gitee Release and Upload Assets
+        id: create_release
         uses: nicennnnnnnlee/action-gitee-release@master
         with:
           gitee_action: create_release
-
           gitee_owner: ${{ github.repository_owner }}
           gitee_repo: ${{ github.event.repository.name }}
           gitee_token: ${{ secrets.GITEE_TOKEN }}
