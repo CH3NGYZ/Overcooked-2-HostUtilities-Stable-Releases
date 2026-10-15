@@ -480,6 +480,39 @@
   "resources": {
     "releases": [
       {
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "minModVersion": "1.8.7.23",
+        "resourceFormat": 1,
+        "changelog": "压缩音频。",
+        "sourceCommit": "0ea00eeefaf645aabdc55e8799d631561d618e06",
+        "assets": [
+          {
+            "name": "HostUtilities.Resources.zip",
+            "size": 9405068,
+            "sha256": "fc8575de8b57766178966729b4cec3d6587adec1974da0aa832e2c642bff78ae"
+          },
+          {
+            "name": "HostUtilities.Resources.manifest",
+            "size": 70574,
+            "sha256": "693e399834c39af349db33573355ee6f4bf781b991d1c928c795e923cb62f648"
+          },
+          {
+            "name": "release-metadata.json",
+            "size": 629,
+            "sha256": "827bebd30f7386a00413ebba67d86000b08c9b2346dfb0c8f12c3b0b04cafd2d"
+          }
+        ],
+        "publishedAt": "2026-10-15T21:56:08Z",
+        "changelogSha256": "9c3de9dd8aa3f099147ba831c84787734046ece3b0f1753f524b8710039a0209",
+        "changelogs": {
+          "zh-cn": "压缩音频。",
+          "en-us": "Compressed audio files to reduce resource package size.",
+          "ko-kr": "리소스 패키지의 크기를 줄이기 위해 오디오 파일을 압축했습니다."
+        },
+        "changelogsSha256": "d600e5c709ad5204bfda10e5d30d73e65c7dbcf6895902e2a238b6af582a16de"
+      },
+      {
         "version": "1.0.2",
         "tag": "v1.0.2",
         "minModVersion": "1.8.7.02",
