@@ -9,7 +9,7 @@
         "branch": "main"
       },
       "gitee": {
-        "owner": "CH3NGYZ",
+        "owner": "ch3ngyz",
         "repo": "Overcooked-2-HostUtilities-Stable-Releases",
         "branch": "main"
       }
@@ -21,7 +21,7 @@
         "branch": "main"
       },
       "gitee": {
-        "owner": "CH3NGYZ",
+        "owner": "ch3ngyz",
         "repo": "Overcooked-2-HostUtilities-Resources",
         "branch": "main"
       }
@@ -474,15 +474,48 @@
           }
         ],
         "publishedAt": "2026-10-01T12:48:58Z"
-      },
+      }
     ]
   },
   "resources": {
     "releases": [
       {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "minModVersion": "1.8.7.02",
+        "resourceFormat": 1,
+        "sourceCommit": "d6906bdc505e7ca0fe52eac8ba50ed46e0b72ac5",
+        "changelog": "拆分音效包和消息通知提示音为单独的资源包，请先下载后再选择使用。",
+        "assets": [
+          {
+            "name": "HostUtilities.Resources.zip",
+            "size": 359262943,
+            "sha256": "22045833ab74b0b66a0daff582882ddfcde3eeebf52a15e0c57755fdc49a86eb"
+          },
+          {
+            "name": "HostUtilities.Resources.manifest",
+            "size": 69989,
+            "sha256": "9be6bd4172443bc31fa8dec6c8dd0f841ffa39491bea55414c1312cb6e5312f2"
+          },
+          {
+            "name": "release-metadata.json",
+            "size": 965,
+            "sha256": "af3a2d989614b6bb6a5c16089a8d426f16dbb8e98bc498b09c2012e3d1dc6623"
+          }
+        ],
+        "changelogs": {
+          "zh-cn": "拆分音效包和消息通知提示音为单独的资源包，请先下载后再选择使用。",
+          "en-us": "The sound effects pack and notification sound pack are now available as separate resource packages. Please download them before selecting which ones to use.",
+          "ko-kr": "효과음 팩과 알림음 팩이 별도의 리소스 패키지로 분리되었습니다. 먼저 다운로드한 후 사용할 패키지를 선택해 주세요."
+        },
+        "publishedAt": "2026-10-15T19:39:47Z",
+        "changelogSha256": "39a56f813032928d223001bb9fdc0adce12fe662e778f83a19a35dea2f076270",
+        "changelogsSha256": "92712999cd96b2b35ba7a20a3cb7cbd930e8b8021696f94f80bc3eaca5af2e8e"
+      },
+      {
         "version": "1.0.1",
         "tag": "v1.0.1",
-        "minModVersion": "1.8.7",
+        "minModVersion": "1.8.7.02",
         "resourceFormat": 1,
         "sourceCommit": "00083db617a1f30f030750b1117cd48637c8da4b",
         "changelog": "第一次单独拆分资源包, 去除内置的配置管理器, 资源包中不再包含配置管理器, 请自行安装ConfigurationManager, 或在厨房MOD管理器中自行配置",
