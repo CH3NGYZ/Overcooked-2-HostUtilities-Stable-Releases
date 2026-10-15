@@ -485,25 +485,25 @@
         "minModVersion": "1.8.7.23",
         "resourceFormat": 1,
         "changelog": "压缩音频。",
-        "sourceCommit": "0ea00eeefaf645aabdc55e8799d631561d618e06",
+        "sourceCommit": "7613611a86ced923ed01667d0c6c4c819b1ebaf3",
         "assets": [
           {
             "name": "HostUtilities.Resources.zip",
-            "size": 9405068,
-            "sha256": "fc8575de8b57766178966729b4cec3d6587adec1974da0aa832e2c642bff78ae"
+            "size": 9405097,
+            "sha256": "99a8e019b7cdb483489e094f072982727da4a9b2941e34d6c473371ce0039dea"
           },
           {
             "name": "HostUtilities.Resources.manifest",
             "size": 70574,
-            "sha256": "693e399834c39af349db33573355ee6f4bf781b991d1c928c795e923cb62f648"
+            "sha256": "96c1109a190323023bab04b3658049c6f933f7bb1cd46c0ee6f77a44fdebdf94"
           },
           {
             "name": "release-metadata.json",
             "size": 629,
-            "sha256": "827bebd30f7386a00413ebba67d86000b08c9b2346dfb0c8f12c3b0b04cafd2d"
+            "sha256": "2a97a55330e7fbdec8c7b0b14b1b830c4197318e188bb8b92e28133679d3e0f0"
           }
         ],
-        "publishedAt": "2026-10-15T21:56:08Z",
+        "publishedAt": "2026-10-15T22:36:47Z",
         "changelogSha256": "9c3de9dd8aa3f099147ba831c84787734046ece3b0f1753f524b8710039a0209",
         "changelogs": {
           "zh-cn": "压缩音频。",
