@@ -570,9 +570,9 @@
           }
         ],
         "changelogs": {
-          "zh-cn": "第一次单独拆分资源包, 去除内置的配置管理器, 资源包中不再包含配置管理器, 请自行安装ConfigurationManager, 或在厨房MOD管理器中自行配置",
-          "en-us": "The first independent resource package release, the built-in configuration manager has been removed, the resource package no longer contains the configuration manager, please install ConfigurationManager yourself, or configure it in the Kitchen MOD Manager.",
-          "ko-kr": "첫 번째 독립 리소스 패키지 릴리스, 내장 구성 관리자가 제거되었으며 리소스 패키지에는 더 이상 구성 관리자가 포함되지 않습니다. ConfigurationManager를 직접 설치하거나 Kitchen MOD Manager에서 구성하십시오."
+          "zh-cn": "单独拆分资源包",
+          "en-us": "Independent resource package release",
+          "ko-kr": "독립형 리소스 팩 출시"
         },
         "publishedAt": "2026-10-08T15:05:06Z",
         "changelogSha256": "91e8bcd286ecbee9f9bcc467e6c82ed851010df97230366db3ebbb07f4365adf",
