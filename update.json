@@ -462,10 +462,10 @@
         "forceUpdate": false,
         "changelog": "这是《街机MOD》v1.8.7 稳定版的更新信息。如果你看到了这条消息，证明街机MOD在升级过程中误取消了“接收测试版更新”的开关，忽略此稳定版更新，并在配置管理器中重新打开“接收测试版更新”即可。",
         "changelogs": {
-        "zh-cn": "这是《街机MOD》v1.8.7 稳定版的更新信息。如果你看到了这条消息，证明街机MOD在升级过程中误取消了“接收测试版更新”的开关，忽略此稳定版更新，并在配置管理器中重新打开“接收测试版更新”即可。",
-        "en-us": "This is the update information for the stable version of *Arcade MOD* v1.8.7. If you see this message, it means that during the upgrade process, Arcade MOD accidentally turned off the “Receive beta updates” switch. Please ignore this stable version update, and re-enable “Receive beta updates” in the Configuration Manager.",
-        "ko-kr": "이것은 《아케이드 MOD》 v1.8.7 안정 버전의 업데이트 정보입니다. 이 메시지를 보셨다면, 아케이드 MOD가 업그레이드 과정에서 “베타 업데이트 수신” 스위치를 실수로 끈 것입니다. 이 안정 버전 업데이트는 무시하고, 구성 관리자에서 “베타 업데이트 수신”을 다시 켜 주세요."
-        }
+          "zh-cn": "这是《街机MOD》v1.8.7 稳定版的更新信息。如果你看到了这条消息，证明街机MOD在升级过程中误取消了“接收测试版更新”的开关，忽略此稳定版更新，并在配置管理器中重新打开“接收测试版更新”即可。",
+          "en-us": "This is the update information for the stable version of *Arcade MOD* v1.8.7. If you see this message, it means that during the upgrade process, Arcade MOD accidentally turned off the “Receive beta updates” switch. Please ignore this stable version update, and re-enable “Receive beta updates” in the Configuration Manager.",
+          "ko-kr": "이것은 《아케이드 MOD》 v1.8.7 안정 버전의 업데이트 정보입니다. 이 메시지를 보셨다면, 아케이드 MOD가 업그레이드 과정에서 “베타 업데이트 수신” 스위치를 실수로 끈 것입니다. 이 안정 버전 업데이트는 무시하고, 구성 관리자에서 “베타 업데이트 수신”을 다시 켜 주세요."
+        },
         "assets": [
           {
             "name": "HostUtilities.zip",
