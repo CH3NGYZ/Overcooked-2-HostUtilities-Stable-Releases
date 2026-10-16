@@ -455,6 +455,27 @@
   "mod": {
     "releases": [
       {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelog": "### 更新内容\n\n- **MOD 互联重构**：新版采用新的互联协议，请尽快更新至此版本。受影响范围包括文字聊天、改名、自定义信息等所有依赖 MOD 互联的功能；延迟传输不受影响，旧版 MOD 依旧能收到新版 MOD 主机发来的客机延迟。\n- **新增剪贴板链接加入提示**：在餐车主菜单切回游戏窗口时，自动识别剪贴板中的普通邀请或观战链接，并询问是否加入。\n- **自定义面板支持拖动**：可拖动调整面板位置，方便安排界面布局。\n- **修复一键退出错误带出街机玩家的问题**：避免退出时将街机匹配加入的玩家一起带回主界面。\n- **刷分记录支持正序、倒序排列**：可按记录时间切换排序，方便查看最新成绩与历史记录。\n- **杂项面板新增游戏设置入口**：可直接打开游戏原生设置菜单。\n- **成员管理面板现可调整换位**：可直接在面板中调整玩家位置。\n- **换位兼容 HostColor 插件**：保留双方换位入口，并同步位置选择。\n- **修复观战遗留问题**：修复观战功能的遗留 BUG。\n- **更新与安装系统重构**：MOD 与资源包支持独立更新，减少重复重启。\n\n### 版本回退提醒\n\n如果遇到严重影响游玩的恶性 BUG，可使用《胡闹厨房2 MOD 管理器》回退至 **1.8.7** 版本。回退后，部分功能将不可用。",
+        "changelogs": {
+          "zh-cn": "### 更新内容\n\n- **MOD 互联重构**：新版采用新的互联协议，请尽快更新至此版本。受影响范围包括文字聊天、改名、自定义信息等所有依赖 MOD 互联的功能；延迟传输不受影响，旧版 MOD 依旧能收到新版 MOD 主机发来的客机延迟。\n- **新增剪贴板链接加入提示**：在餐车主菜单切回游戏窗口时，自动识别剪贴板中的普通邀请或观战链接，并询问是否加入。\n- **自定义面板支持拖动**：可拖动调整面板位置，方便安排界面布局。\n- **修复一键退出错误带出街机玩家的问题**：避免退出时将街机匹配加入的玩家一起带回主界面。\n- **刷分记录支持正序、倒序排列**：可按记录时间切换排序，方便查看最新成绩与历史记录。\n- **杂项面板新增游戏设置入口**：可直接打开游戏原生设置菜单。\n- **成员管理面板现可调整换位**：可直接在面板中调整玩家位置。\n- **换位兼容 HostColor 插件**：保留双方换位入口，并同步位置选择。\n- **修复观战遗留问题**：修复观战功能的遗留 BUG。\n- **更新与安装系统重构**：MOD 与资源包支持独立更新，减少重复重启。\n\n### 版本回退提醒\n\n如果遇到严重影响游玩的恶性 BUG，可使用《胡闹厨房2 MOD 管理器》回退至 **1.8.7** 版本。回退后，部分功能将不可用。",
+          "en-us": "### What's New\n\n- **Reworked MOD communication**: This version uses a new communication protocol. Please update to this version as soon as possible. All features that rely on MOD-to-MOD communication are affected, including text chat, custom names and custom information. Latency transmission is unaffected: older MOD versions can still receive client latency data sent by hosts running the new MOD.\n- **Clipboard link join prompt**: When switching back to the game window from the van main menu, the MOD detects normal invitation or spectator links in the clipboard and asks whether to join.\n- **Draggable custom panels**: Drag panels to reposition them and arrange your interface.\n- **Fixed Quick Exit taking arcade players back to the main menu**: Players who joined through arcade matchmaking are no longer incorrectly carried back to the main menu when you exit.\n- **Score record sorting**: Switch between ascending and descending order by record time to browse recent scores or older records.\n- **Game settings shortcut in the Miscellaneous panel**: Open the game's native settings menu directly.\n- **Slot swapping in the Member Management panel**: Adjust player positions directly from the panel.\n- **HostColor compatibility for slot swapping**: Both MODs retain their swap controls and synchronize position selections.\n- **Spectator bug fixes**: Fixed remaining bugs in spectator functionality.\n- **Reworked updates and installation**: The MOD and resource packs support independent updates, reducing repeated restarts.\n\n### Rollback Notice\n\nIf you encounter a critical bug that seriously affects gameplay, use the Overcooked! 2 MOD Manager to roll back to **1.8.7**. Some features will be unavailable after rolling back.",
+          "ko-kr": "### 업데이트 내용\n\n- **MOD 통신 개편**: 이번 버전부터 새로운 통신 프로토콜을 사용하므로 가능한 한 빨리 업데이트해 주세요. 텍스트 채팅, 이름 변경, 사용자 지정 정보 등 MOD 간 통신에 의존하는 모든 기능이 영향을 받습니다. 지연 시간 전송은 영향을 받지 않으며, 구버전 MOD도 신버전 MOD 호스트가 보내는 클라이언트 지연 시간을 계속 수신할 수 있습니다.\n- **클립보드 링크 참가 안내 추가**: 밴 메인 메뉴에서 게임 창으로 돌아오면 클립보드의 일반 초대 링크 또는 관전 링크를 자동으로 인식하고 참가 여부를 묻습니다.\n- **사용자 지정 패널 드래그 지원**: 패널을 드래그하여 위치와 화면 배치를 조정할 수 있습니다.\n- **빠른 나가기 시 아케이드 플레이어가 함께 메인 메뉴로 이동하는 문제 수정**: 아케이드 매칭으로 참가한 플레이어가 나가기 동작에 의해 잘못 함께 이동하지 않도록 수정했습니다.\n- **점수 기록 정렬 지원**: 기록 시간을 기준으로 오름차순 또는 내림차순으로 정렬하여 최근 점수나 과거 기록을 확인할 수 있습니다.\n- **기타 패널에 게임 설정 바로가기 추가**: 게임의 기본 설정 메뉴를 바로 열 수 있습니다.\n- **멤버 관리 패널에서 자리 변경 지원**: 패널에서 플레이어 위치를 직접 조정할 수 있습니다.\n- **자리 변경의 HostColor 플러그인 호환성 개선**: 두 MOD의 자리 변경 기능을 모두 유지하고 위치 선택을 동기화합니다.\n- **관전 관련 버그 수정**: 관전 기능에 남아 있던 버그를 수정했습니다.\n- **업데이트 및 설치 시스템 개편**: MOD와 리소스 팩의 독립 업데이트를 지원하여 반복 재시작을 줄였습니다.\n\n### 이전 버전으로 되돌리기 안내\n\n플레이에 심각한 영향을 주는 치명적인 버그가 발생하면 오버쿡드! 2 MOD 매니저를 사용하여 **1.8.7** 버전으로 되돌릴 수 있습니다. 되돌린 후에는 일부 기능을 사용할 수 없습니다."
+        },
+        "tag": "v1.9.0",
+        "version": "1.9.0",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 380060,
+            "sha256": "f736ff1779eb388944473b490f64fac5e17e4e4320aea4eee3e10380636e65ed"
+          }
+        ],
+        "publishedAt": "2026-10-16T01:45:26Z"
+      },
+      {
         "version": "1.8.7",
         "tag": "v1.8.7",
         "minResourceVersion": "1.0.0",
