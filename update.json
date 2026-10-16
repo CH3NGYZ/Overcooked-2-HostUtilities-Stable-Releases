@@ -458,6 +458,27 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
+        "changelog": "修复❝更新资源包时的备份错误。",
+        "changelogs": {
+          "zh-cn": "修复❝更新资源包时的备份错误。",
+          "en-us": "Fixed❝Backup errors when updating resource packages.",
+          "ko-kr": "수정❝리소스 패키지 업데이트 시 발생하는 백업 오류를 수정했습니다."
+        },
+        "tag": "v1.9.3",
+        "version": "1.9.3",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 382625,
+            "sha256": "aefcc4afd23c5ce52f6f89fb87b1dd0ab262c97be98186408e091602fd3bfbf7"
+          }
+        ],
+        "publishedAt": "2026-10-16T22:48:44Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
         "changelog": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
         "changelogs": {
           "zh-cn": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
