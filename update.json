@@ -458,6 +458,27 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
+        "changelog": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
+        "changelogs": {
+          "zh-cn": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
+          "en-us": "Fixed❝Text message notification sounds ignoring the game's sound effects volume setting.",
+          "ko-kr": "수정❝문자 메시지 알림음이 게임 효과음 볼륨 설정을 따르지 않던 버그를 수정했습니다."
+        },
+        "tag": "v1.9.2",
+        "version": "1.9.2",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 378013,
+            "sha256": "a1ea6771a7af4c82de45ff1b853f1224c15057f4af3715fcbedeba5cd01558ef"
+          }
+        ],
+        "publishedAt": "2026-10-16T15:20:19Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
         "changelog": "修复了更新后街机MOD消失的BUG",
         "changelogs": {
           "zh-cn": "修复了更新后街机MOD消失的BUG",
