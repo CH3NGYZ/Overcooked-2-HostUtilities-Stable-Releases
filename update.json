@@ -522,6 +522,39 @@
   "resources": {
     "releases": [
       {
+        "version": "1.0.5",
+        "tag": "v1.0.5",
+        "minModVersion": "1.9.0",
+        "resourceFormat": 1,
+        "changelog": "降低音频音量。",
+        "sourceCommit": "5dcde704c73b2355e4fd2fa0789a3e6582295c76",
+        "assets": [
+          {
+            "name": "HostUtilities.Resources.zip",
+            "size": 9324884,
+            "sha256": "b2de46b26555245b24555041eb87ea6dbb341d7d7b7f21553302ba903bc6fc16"
+          },
+          {
+            "name": "HostUtilities.Resources.manifest",
+            "size": 70749,
+            "sha256": "ef42d8cbc727da7b31993edbc34c37a40b809258b75e790d7826873aa3cd6db2"
+          },
+          {
+            "name": "release-metadata.json",
+            "size": 551,
+            "sha256": "658543a248bcdb0e3777e745bcf35e1d15dd200bdcf735920f0f2b43fa97b804"
+          }
+        ],
+        "publishedAt": "2026-10-16T13:56:05Z",
+        "changelogSha256": "696cddfefb3d1c47bc130f1722853cf2a4908e474df084c294a3524916abaeec",
+        "changelogs": {
+          "zh-cn": "降低音频音量。",
+          "en-us": "Reduced audio volume.",
+          "ko-kr": "오디오 볼륨을 낮췄습니다."
+        },
+        "changelogsSha256": "4c61d521455d727c3da0748005af361b3ac4c9f85c40c1e6f6afdb9e3b2bfe6d"
+      },
+      {
         "version": "1.0.3",
         "tag": "v1.0.3",
         "minModVersion": "1.8.7.23",
