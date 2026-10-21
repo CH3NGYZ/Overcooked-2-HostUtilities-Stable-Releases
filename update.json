@@ -458,6 +458,27 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
+        "changelog": "修复：玩家中途离开后换位不会回落的问题。\n修复：场景切换检测异常。\n优化：统一游戏阶段判断。\n优化：macOS 强制客机匹配兼容。\n优化：仅 MOD 本体更新时不操作资源包。\n新增：更新时提示清理 OC2HostUtilities 主文件夹下的无关文件。",
+        "changelogs": {
+          "zh-cn": "修复：玩家中途离开后换位不会回落的问题。\n修复：场景切换检测异常。\n优化：统一游戏阶段判断。\n优化：macOS 强制客机匹配兼容。\n优化：仅 MOD 本体更新时不操作资源包。\n新增：更新时提示清理 OC2HostUtilities 主文件夹下的无关文件。",
+          "en-us": "Fixed: Player positions no longer fail to compact after a player leaves mid-session.\nFixed: Scene-switch detection errors.\nOptimized: Unified game phase detection.\nOptimized: macOS compatibility for forced-client matchmaking.\nOptimized: Resource packages are no longer touched during MOD-only updates.\nAdded: A prompt to clean unrelated files in the OC2HostUtilities root folder during updates.",
+          "ko-kr": "수정: 게임 중 플레이어가 나간 후 슬롯 위치가 자동으로 정리되지 않던 문제를 수정했습니다.\n수정: 장면 전환 감지 오류를 수정했습니다.\n최적화: 게임 단계 판정을 통합했습니다.\n최적화: macOS 강제 클라이언트 매칭 호환성을 개선했습니다.\n최적화: MOD 본체만 업데이트할 때 리소스 패키지를 처리하지 않도록 개선했습니다.\n추가: 업데이트 시 OC2HostUtilities 루트 폴더의 관련 없는 파일 정리 안내를 추가했습니다."
+        },
+        "tag": "v1.9.6",
+        "version": "1.9.6",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 510433,
+            "sha256": "3878c1cc52282e5e520d3314a8ee915ce5500b498444a905a05db654e4e7f4ed"
+          }
+        ],
+        "publishedAt": "2026-10-21T19:17:12Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
         "changelog": "修复❝因路径越界导致的资源包安装失败。\n优化❝改善 Steam 搬家后的文件读写兼容性。\n新增❝支持 macOS 原生游戏自动更新。\n调整❝退出安装改用内置原生工具。\n优化❝减少更新时的重复扫描和备份。\n新增❝扫描、备份和安装准备的进度提示。\n优化❝更新时忽略普通 .DS_Store 文件。\n优化❝补充更新失败的诊断日志。",
         "changelogs": {
           "zh-cn": "修复❝因路径越界导致的资源包安装失败。\n优化❝改善 Steam 搬家后的文件读写兼容性。\n新增❝支持 macOS 原生游戏自动更新。\n调整❝退出安装改用内置原生工具。\n优化❝减少更新时的重复扫描和备份。\n新增❝扫描、备份和安装准备的进度提示。\n优化❝更新时忽略普通 .DS_Store 文件。\n优化❝补充更新失败的诊断日志。",
@@ -537,27 +558,6 @@
           }
         ],
         "publishedAt": "2026-10-16T15:20:19Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复了更新后街机MOD消失的BUG",
-        "changelogs": {
-          "zh-cn": "修复了更新后街机MOD消失的BUG",
-          "en-us": "Fixed a bug that caused Arcade MODs to disappear after updating.",
-          "ko-kr": "업데이트 후 아케이드 MOD가 사라지는 버그를 수정했습니다."
-        },
-        "tag": "v1.9.1",
-        "version": "1.9.1",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 377778,
-            "sha256": "cfbb8c43f1930e457503de2f69634ac336bd9fe43a16ed9f257af6e9ede25b03"
-          }
-        ],
-        "publishedAt": "2026-10-16T13:53:22Z"
       }
     ]
   },
