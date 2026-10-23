@@ -458,7 +458,27 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "修复：玩家中途离开后换位不会回落的问题。\n修复：场景切换检测异常。\n优化：统一游戏阶段判断。\n优化：macOS 强制客机匹配兼容。\n优化：仅 MOD 本体更新时不操作资源包。\n新增：更新时提示清理 OC2HostUtilities 主文件夹下的无关文件。",
+        "changelogs": {
+          "zh-cn": "新增：MOD 语言增加日本语支持。\n调整：更新按钮移到杂项面板左上角。\n修复：街机大厅手动选关后无法进入关卡的问题。\n优化：杂项面板三列布局和大厅搜索体验。\n优化：多语言界面适配与长文本自动缩小。",
+          "en-us": "Added: Japanese language support for the MOD.\nAdjusted: Moved the update button to the top-left of the Miscellaneous panel.\nFixed: Manual level selection in the arcade lobby could fail to enter the level.\nOptimized: Three-column Miscellaneous panel layout and lobby search experience.\nOptimized: Multilingual UI adaptation and automatic long-text shrinking.",
+          "ko-kr": "추가: MOD 언어에 일본어 지원을 추가했습니다.\n조정: 업데이트 버튼을 기타 패널 왼쪽 위로 이동했습니다.\n수정: 아케이드 로비에서 수동 스테이지 선택 후 스테이지에 진입하지 못하던 문제를 수정했습니다.\n최적화: 기타 패널의 3열 레이아웃과 로비 검색 환경을 개선했습니다.\n최적화: 다국어 UI 적응과 긴 텍스트 자동 축소를 개선했습니다.",
+          "ja-jp": "追加：MOD の日本語対応を追加しました。\n調整：アップデートボタンをその他パネルの左上に移動しました。\n修正：アーケードロビーの手動ステージ選択でステージに入れない問題を修正しました。\n最適化：その他パネルの3列レイアウトとロビー検索を改善しました。\n最適化：多言語 UI 対応と長いテキストの自動縮小を改善しました。"
+        },
+        "tag": "v1.9.7",
+        "version": "1.9.7",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 524781,
+            "sha256": "2775c4036461076013b9bf0511c2a6270cdfe5d5557a6654c682c784d61257c0"
+          }
+        ],
+        "publishedAt": "2026-10-23T14:38:01Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
         "changelogs": {
           "zh-cn": "修复：玩家中途离开后换位不会回落的问题。\n修复：场景切换检测异常。\n优化：统一游戏阶段判断。\n优化：macOS 强制客机匹配兼容。\n优化：仅 MOD 本体更新时不操作资源包。\n新增：更新时提示清理 OC2HostUtilities 主文件夹下的无关文件。",
           "en-us": "Fixed: Player positions no longer fail to compact after a player leaves mid-session.\nFixed: Scene-switch detection errors.\nOptimized: Unified game phase detection.\nOptimized: macOS compatibility for forced-client matchmaking.\nOptimized: Resource packages are no longer touched during MOD-only updates.\nAdded: A prompt to clean unrelated files in the OC2HostUtilities root folder during updates.",
@@ -479,7 +499,6 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "修复❝因路径越界导致的资源包安装失败。\n优化❝改善 Steam 搬家后的文件读写兼容性。\n新增❝支持 macOS 原生游戏自动更新。\n调整❝退出安装改用内置原生工具。\n优化❝减少更新时的重复扫描和备份。\n新增❝扫描、备份和安装准备的进度提示。\n优化❝更新时忽略普通 .DS_Store 文件。\n优化❝补充更新失败的诊断日志。",
         "changelogs": {
           "zh-cn": "修复❝因路径越界导致的资源包安装失败。\n优化❝改善 Steam 搬家后的文件读写兼容性。\n新增❝支持 macOS 原生游戏自动更新。\n调整❝退出安装改用内置原生工具。\n优化❝减少更新时的重复扫描和备份。\n新增❝扫描、备份和安装准备的进度提示。\n优化❝更新时忽略普通 .DS_Store 文件。\n优化❝补充更新失败的诊断日志。",
           "en-us": "Fixed❝Resource installs blocked by path boundary checks.\nOptimized❝File access after moving Steam.\nAdded❝Auto-updates for the native macOS game.\nAdjusted❝Exit-time installs use a built-in native updater.\nOptimized❝Fewer repeated update scans and backups.\nAdded❝Progress for scanning, backups and install preparation.\nOptimized❝Updates ignore regular .DS_Store files.\nOptimized❝More detailed update failure logs.",
@@ -500,7 +519,6 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "新增❝文字聊天面板支持调节提示音量（0–100%）和弹幕速度（0.5–2倍），自动保存设置；对应开关按钮改为半高，滑块显示在下方。\n调整❝局内最大物体数量改为在每关默认值上增减，范围为-30至+30，结果最低为0；默认增量为0，旧数量配置不迁移。\n修复❝过长姓名可能超出原版入房或四人名单缓冲的问题，统一按UTF-16限制为238字节（含格式标签），截断时不拆分emoji代理对。\n调整❝自定义姓名同步改用新格式，与旧版MOD的姓名同步不兼容；其他MOD互联功能不受此格式变更影响。\n修复❝观战入房握手不再附带昵称，避免长姓名挤占授权信息导致观战加入失败。\n修复❝观战确认重复清理同一连接的MOD互联状态，导致无法获取主机状态、上报状态或发送文字消息的问题。\n修复❝返回主界面后残留大厅、对战或局内状态导致成员换位按钮全部变灰的问题，统一按钮、实际换位和名单回调的限制。\n优化❝启动时已有的加入链接，以及首次存档加载前切回游戏读取到的最新链接，会在存档加载完成且主菜单就绪后提示一次，保留去重和邀请保护。\n优化❝补充观战授权、加入、接纳、离开及加载等待的调试日志，便于定位失败原因；不输出完整授权票据。\n优化❝安装包内DLL的文件时间改用源码提交时间，不再统一为1980年，降低覆盖安装后BepInEx沿用旧版本显示缓存的风险。",
         "changelogs": {
           "zh-cn": "新增❝文字聊天面板支持调节提示音量（0–100%）和弹幕速度（0.5–2倍），自动保存设置；对应开关按钮改为半高，滑块显示在下方。\n调整❝局内最大物体数量改为在每关默认值上增减，范围为-30至+30，结果最低为0；默认增量为0，旧数量配置不迁移。\n修复❝过长姓名可能超出原版入房或四人名单缓冲的问题，统一按UTF-16限制为238字节（含格式标签），截断时不拆分emoji代理对。\n调整❝自定义姓名同步改用新格式，与旧版MOD的姓名同步不兼容；其他MOD互联功能不受此格式变更影响。\n修复❝观战入房握手不再附带昵称，避免长姓名挤占授权信息导致观战加入失败。\n修复❝观战确认重复清理同一连接的MOD互联状态，导致无法获取主机状态、上报状态或发送文字消息的问题。\n修复❝返回主界面后残留大厅、对战或局内状态导致成员换位按钮全部变灰的问题，统一按钮、实际换位和名单回调的限制。\n优化❝启动时已有的加入链接，以及首次存档加载前切回游戏读取到的最新链接，会在存档加载完成且主菜单就绪后提示一次，保留去重和邀请保护。\n优化❝补充观战授权、加入、接纳、离开及加载等待的调试日志，便于定位失败原因；不输出完整授权票据。\n优化❝安装包内DLL的文件时间改用源码提交时间，不再统一为1980年，降低覆盖安装后BepInEx沿用旧版本显示缓存的风险。",
           "en-us": "Added❝Notification volume (0–100%) and danmaku speed (0.5–2×) controls to the text chat panel, with saved settings; the corresponding toggles are now half-height, with sliders below.\nAdjusted❝The in-level object limit is now an offset from each level's default, ranging from -30 to +30 with a minimum result of 0; the offset defaults to 0, and the old count setting is not migrated.\nFixed❝Names that could exceed the vanilla join or four-player roster buffers are now limited to 238 UTF-16 bytes, including formatting tags, without splitting emoji surrogate pairs when truncated.\nAdjusted❝Custom name synchronization uses a new format that is incompatible with older MOD versions' name synchronization; other MOD communication features are unaffected by this format change.\nFixed❝Spectator join handshakes no longer include nicknames, preventing long names from crowding out authorization data and causing spectator joins to fail.\nFixed❝Spectator confirmation clearing MOD communication state on the same connection, which could prevent receiving host state, reporting state, or sending text chat.\nFixed❝Stale lobby, versus, or in-level state disabling all member slot-swap buttons after returning to the main menu; buttons, actual swaps, and roster callbacks now use consistent restrictions.\nOptimized❝Join links captured at startup, or the latest link captured when switching back before the first profile load, are prompted once after the profile has loaded and the main menu is ready, preserving deduplication and invitation safeguards.\nOptimized❝Added debug logs for spectator authorization, joining, admission, departure, and loading waits to help identify failures, without logging complete authorization tickets.\nOptimized❝The DLL timestamp inside installation packages now uses the source commit time instead of a fixed 1980 date, reducing the risk of BepInEx displaying cached old version information after an overwrite install.",
@@ -521,7 +539,6 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "修复❝更新资源包时的备份错误。",
         "changelogs": {
           "zh-cn": "修复❝更新资源包时的备份错误。",
           "en-us": "Fixed❝Backup errors when updating resource packages.",
@@ -537,27 +554,6 @@
           }
         ],
         "publishedAt": "2026-10-16T22:48:44Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelog": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
-        "changelogs": {
-          "zh-cn": "修复❝文字消息提示音不受游戏音效音量控制的 BUG。",
-          "en-us": "Fixed❝Text message notification sounds ignoring the game's sound effects volume setting.",
-          "ko-kr": "수정❝문자 메시지 알림음이 게임 효과음 볼륨 설정을 따르지 않던 버그를 수정했습니다."
-        },
-        "tag": "v1.9.2",
-        "version": "1.9.2",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 378013,
-            "sha256": "a1ea6771a7af4c82de45ff1b853f1224c15057f4af3715fcbedeba5cd01558ef"
-          }
-        ],
-        "publishedAt": "2026-10-16T15:20:19Z"
       }
     ]
   },
