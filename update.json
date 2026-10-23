@@ -463,7 +463,6 @@
           "zh-cn": "新增：MOD 语言增加日本语支持。\n调整：更新按钮移到杂项面板左上角。\n修复：街机大厅手动选关后无法进入关卡的问题。\n优化：杂项面板三列布局和大厅搜索体验。\n优化：多语言界面适配与长文本自动缩小。",
           "en-us": "Added: Japanese language support for the MOD.\nAdjusted: Moved the update button to the top-left of the Miscellaneous panel.\nFixed: Manual level selection in the arcade lobby could fail to enter the level.\nOptimized: Three-column Miscellaneous panel layout and lobby search experience.\nOptimized: Multilingual UI adaptation and automatic long-text shrinking.",
           "ko-kr": "추가: MOD 언어에 일본어 지원을 추가했습니다.\n조정: 업데이트 버튼을 기타 패널 왼쪽 위로 이동했습니다.\n수정: 아케이드 로비에서 수동 스테이지 선택 후 스테이지에 진입하지 못하던 문제를 수정했습니다.\n최적화: 기타 패널의 3열 레이아웃과 로비 검색 환경을 개선했습니다.\n최적화: 다국어 UI 적응과 긴 텍스트 자동 축소를 개선했습니다.",
-          "ja-jp": "追加：MOD の日本語対応を追加しました。\n調整：アップデートボタンをその他パネルの左上に移動しました。\n修正：アーケードロビーの手動ステージ選択でステージに入れない問題を修正しました。\n最適化：その他パネルの3列レイアウトとロビー検索を改善しました。\n最適化：多言語 UI 対応と長いテキストの自動縮小を改善しました。"
         },
         "tag": "v1.9.7",
         "version": "1.9.7",
@@ -475,86 +474,6 @@
           }
         ],
         "publishedAt": "2026-10-23T14:38:01Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "修复：玩家中途离开后换位不会回落的问题。\n修复：场景切换检测异常。\n优化：统一游戏阶段判断。\n优化：macOS 强制客机匹配兼容。\n优化：仅 MOD 本体更新时不操作资源包。\n新增：更新时提示清理 OC2HostUtilities 主文件夹下的无关文件。",
-          "en-us": "Fixed: Player positions no longer fail to compact after a player leaves mid-session.\nFixed: Scene-switch detection errors.\nOptimized: Unified game phase detection.\nOptimized: macOS compatibility for forced-client matchmaking.\nOptimized: Resource packages are no longer touched during MOD-only updates.\nAdded: A prompt to clean unrelated files in the OC2HostUtilities root folder during updates.",
-          "ko-kr": "수정: 게임 중 플레이어가 나간 후 슬롯 위치가 자동으로 정리되지 않던 문제를 수정했습니다.\n수정: 장면 전환 감지 오류를 수정했습니다.\n최적화: 게임 단계 판정을 통합했습니다.\n최적화: macOS 강제 클라이언트 매칭 호환성을 개선했습니다.\n최적화: MOD 본체만 업데이트할 때 리소스 패키지를 처리하지 않도록 개선했습니다.\n추가: 업데이트 시 OC2HostUtilities 루트 폴더의 관련 없는 파일 정리 안내를 추가했습니다."
-        },
-        "tag": "v1.9.6",
-        "version": "1.9.6",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 510433,
-            "sha256": "3878c1cc52282e5e520d3314a8ee915ce5500b498444a905a05db654e4e7f4ed"
-          }
-        ],
-        "publishedAt": "2026-10-21T19:17:12Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "修复❝因路径越界导致的资源包安装失败。\n优化❝改善 Steam 搬家后的文件读写兼容性。\n新增❝支持 macOS 原生游戏自动更新。\n调整❝退出安装改用内置原生工具。\n优化❝减少更新时的重复扫描和备份。\n新增❝扫描、备份和安装准备的进度提示。\n优化❝更新时忽略普通 .DS_Store 文件。\n优化❝补充更新失败的诊断日志。",
-          "en-us": "Fixed❝Resource installs blocked by path boundary checks.\nOptimized❝File access after moving Steam.\nAdded❝Auto-updates for the native macOS game.\nAdjusted❝Exit-time installs use a built-in native updater.\nOptimized❝Fewer repeated update scans and backups.\nAdded❝Progress for scanning, backups and install preparation.\nOptimized❝Updates ignore regular .DS_Store files.\nOptimized❝More detailed update failure logs.",
-          "ko-kr": "수정❝경로 경계 검사로 인한 리소스 설치 실패를 수정했습니다.\n최적화❝Steam 이동 후 파일 읽기와 쓰기 호환성을 개선했습니다.\n추가❝macOS 네이티브 게임의 자동 업데이트를 지원합니다.\n조정❝게임 종료 후 설치에 내장 네이티브 도구를 사용합니다.\n최적화❝업데이트 중 반복 검사와 백업을 줄였습니다.\n추가❝파일 검사·백업·설치 준비의 진행 상태를 표시합니다.\n최적화❝업데이트 시 일반 .DS_Store 파일을 무시합니다.\n최적화❝업데이트 실패 진단 로그를 보강했습니다."
-        },
-        "tag": "v1.9.5",
-        "version": "1.9.5",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 503317,
-            "sha256": "8866bb35a092aa254ae63550799bb8c94d60eb84356f2652e293372ef62369e6"
-          }
-        ],
-        "publishedAt": "2026-10-18T14:46:45Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "新增❝文字聊天面板支持调节提示音量（0–100%）和弹幕速度（0.5–2倍），自动保存设置；对应开关按钮改为半高，滑块显示在下方。\n调整❝局内最大物体数量改为在每关默认值上增减，范围为-30至+30，结果最低为0；默认增量为0，旧数量配置不迁移。\n修复❝过长姓名可能超出原版入房或四人名单缓冲的问题，统一按UTF-16限制为238字节（含格式标签），截断时不拆分emoji代理对。\n调整❝自定义姓名同步改用新格式，与旧版MOD的姓名同步不兼容；其他MOD互联功能不受此格式变更影响。\n修复❝观战入房握手不再附带昵称，避免长姓名挤占授权信息导致观战加入失败。\n修复❝观战确认重复清理同一连接的MOD互联状态，导致无法获取主机状态、上报状态或发送文字消息的问题。\n修复❝返回主界面后残留大厅、对战或局内状态导致成员换位按钮全部变灰的问题，统一按钮、实际换位和名单回调的限制。\n优化❝启动时已有的加入链接，以及首次存档加载前切回游戏读取到的最新链接，会在存档加载完成且主菜单就绪后提示一次，保留去重和邀请保护。\n优化❝补充观战授权、加入、接纳、离开及加载等待的调试日志，便于定位失败原因；不输出完整授权票据。\n优化❝安装包内DLL的文件时间改用源码提交时间，不再统一为1980年，降低覆盖安装后BepInEx沿用旧版本显示缓存的风险。",
-          "en-us": "Added❝Notification volume (0–100%) and danmaku speed (0.5–2×) controls to the text chat panel, with saved settings; the corresponding toggles are now half-height, with sliders below.\nAdjusted❝The in-level object limit is now an offset from each level's default, ranging from -30 to +30 with a minimum result of 0; the offset defaults to 0, and the old count setting is not migrated.\nFixed❝Names that could exceed the vanilla join or four-player roster buffers are now limited to 238 UTF-16 bytes, including formatting tags, without splitting emoji surrogate pairs when truncated.\nAdjusted❝Custom name synchronization uses a new format that is incompatible with older MOD versions' name synchronization; other MOD communication features are unaffected by this format change.\nFixed❝Spectator join handshakes no longer include nicknames, preventing long names from crowding out authorization data and causing spectator joins to fail.\nFixed❝Spectator confirmation clearing MOD communication state on the same connection, which could prevent receiving host state, reporting state, or sending text chat.\nFixed❝Stale lobby, versus, or in-level state disabling all member slot-swap buttons after returning to the main menu; buttons, actual swaps, and roster callbacks now use consistent restrictions.\nOptimized❝Join links captured at startup, or the latest link captured when switching back before the first profile load, are prompted once after the profile has loaded and the main menu is ready, preserving deduplication and invitation safeguards.\nOptimized❝Added debug logs for spectator authorization, joining, admission, departure, and loading waits to help identify failures, without logging complete authorization tickets.\nOptimized❝The DLL timestamp inside installation packages now uses the source commit time instead of a fixed 1980 date, reducing the risk of BepInEx displaying cached old version information after an overwrite install.",
-          "ko-kr": "추가❝텍스트 채팅 패널에서 알림 음량(0–100%)과 채팅 자막 속도(0.5–2배)를 조절하고 설정을 저장할 수 있습니다. 해당 전환 버튼은 높이를 절반으로 줄이고 아래에 슬라이더를 배치했습니다.\n조정❝스테이지 내 최대 물체 수를 각 스테이지 기본값에서 -30부터 +30까지 증감하도록 변경했습니다. 적용 결과는 최소 0이며, 기본 증감값은 0이고 기존 개수 설정은 이전하지 않습니다.\n수정❝긴 이름이 원본 게임의 입장 또는 4인 명단 버퍼를 초과하지 않도록 서식 태그를 포함해 UTF-16 기준 238바이트로 제한하며, 잘라낼 때 이모지 서로게이트 쌍을 나누지 않습니다.\n조정❝사용자 지정 이름 동기화에 새 형식을 적용하여 이전 MOD 버전의 이름 동기화와 호환되지 않습니다. 다른 MOD 통신 기능은 이 형식 변경의 영향을 받지 않습니다.\n수정❝관전 입장 핸드셰이크에서 닉네임을 제외하여 긴 이름 때문에 인증 정보가 누락되고 관전 입장이 실패하는 문제를 방지했습니다.\n수정❝관전 연결 확인 시 동일 연결의 MOD 통신 상태를 다시 초기화하여 호스트 상태 수신, 상태 보고 또는 텍스트 채팅 전송이 불가능해지는 문제를 수정했습니다.\n수정❝메인 메뉴 복귀 후 남아 있는 로비, 대전 또는 스테이지 상태로 인해 멤버 자리 변경 버튼이 모두 비활성화되는 문제를 수정하고, 버튼과 실제 변경 및 명단 콜백에 같은 제한을 적용했습니다.\n최적화❝시작 시 읽은 참가 링크 또는 최초 저장 데이터 로드 전에 게임으로 돌아올 때 읽은 최신 링크를 저장 데이터 로드 완료 후 메인 메뉴가 준비되면 한 번 표시합니다. 중복 방지와 기존 초대 보호는 유지됩니다.\n최적화❝관전 인증, 입장 요청, 접속 수락, 퇴장 및 로딩 대기의 디버그 로그를 보강하여 실패 원인을 확인하기 쉽게 했으며, 인증 티켓 전체를 기록하지 않습니다.\n최적화❝설치 패키지 안의 DLL 파일 시간을 고정된 1980년 날짜 대신 소스 커밋 시간으로 설정하여 덮어쓰기 설치 후 BepInEx가 이전 버전 표시 캐시를 재사용할 위험을 줄였습니다."
-        },
-        "tag": "v1.9.4",
-        "version": "1.9.4",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 392542,
-            "sha256": "b2d6383b6b1a0b765b367136549c0dc68bbd26d55b850ec91c373ed89a1c05d3"
-          }
-        ],
-        "publishedAt": "2026-10-17T11:46:51Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "修复❝更新资源包时的备份错误。",
-          "en-us": "Fixed❝Backup errors when updating resource packages.",
-          "ko-kr": "수정❝리소스 패키지 업데이트 시 발생하는 백업 오류를 수정했습니다."
-        },
-        "tag": "v1.9.3",
-        "version": "1.9.3",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 382625,
-            "sha256": "aefcc4afd23c5ce52f6f89fb87b1dd0ab262c97be98186408e091602fd3bfbf7"
-          }
-        ],
-        "publishedAt": "2026-10-16T22:48:44Z"
       }
     ]
   },
