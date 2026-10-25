@@ -463,6 +463,7 @@
           "zh-cn": "新增：MOD 语言增加日本语支持。\n调整：更新按钮移到杂项面板左上角。\n修复：街机大厅手动选关后无法进入关卡的问题。\n优化：杂项面板三列布局和大厅搜索体验。\n优化：多语言界面适配与长文本自动缩小。",
           "en-us": "Added: Japanese language support for the MOD.\nAdjusted: Moved the update button to the top-left of the Miscellaneous panel.\nFixed: Manual level selection in the arcade lobby could fail to enter the level.\nOptimized: Three-column Miscellaneous panel layout and lobby search experience.\nOptimized: Multilingual UI adaptation and automatic long-text shrinking.",
           "ko-kr": "추가: MOD 언어에 일본어 지원을 추가했습니다.\n조정: 업데이트 버튼을 기타 패널 왼쪽 위로 이동했습니다.\n수정: 아케이드 로비에서 수동 스테이지 선택 후 스테이지에 진입하지 못하던 문제를 수정했습니다.\n최적화: 기타 패널의 3열 레이아웃과 로비 검색 환경을 개선했습니다.\n최적화: 다국어 UI 적응과 긴 텍스트 자동 축소를 개선했습니다.",
+          "ja-jp": "追加：MOD の日本語対応を追加しました。\n調整：アップデートボタンをその他パネルの左上に移動しました。\n修正：アーケードロビーの手動ステージ選択でステージに入れない問題を修正しました。\n最適化：その他パネルの3列レイアウトとロビー検索を改善しました。\n最適化：多言語 UI 対応と長いテキストの自動縮小を改善しました。"
         },
         "tag": "v1.9.7",
         "version": "1.9.7",
