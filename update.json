@@ -461,8 +461,7 @@
         "changelogs": {
           "zh-cn": "修复❝进入街机大厅等待玩家时手动选关列表不显示的问题。\n优化❝剪贴板加入链接弹窗体验。",
           "en-us": "Fixed❝The manual level selection list was not shown in the arcade lobby while waiting for players.\nOptimized❝Clipboard join-link dialog experience.",
-          "ko-kr": "수정❝아케이드 로비에서 플레이어 대기 중 수동 스테이지 선택 목록이 표시되지 않던 문제를 수정했습니다.\n최적화❝클립보드 입장 링크 안내 창 사용성을 개선했습니다.",
-          "ja-jp": "修正❝アーケードロビーでプレイヤー待機中に手動レベル選択リストが表示されない問題を修正しました。\n最適化❝クリップボード参加リンクのダイアログ体験を改善しました。"
+          "ko-kr": "수정❝아케이드 로비에서 플레이어 대기 중 수동 스테이지 선택 목록이 표시되지 않던 문제를 수정했습니다.\n최적화❝클립보드 입장 링크 안내 창 사용성을 개선했습니다."
         },
         "tag": "v1.9.8",
         "version": "1.9.8",
@@ -482,8 +481,7 @@
         "changelogs": {
           "zh-cn": "新增：MOD 语言增加日本语支持。\n调整：更新按钮移到杂项面板左上角。\n修复：街机大厅手动选关后无法进入关卡的问题。\n优化：杂项面板三列布局和大厅搜索体验。\n优化：多语言界面适配与长文本自动缩小。",
           "en-us": "Added: Japanese language support for the MOD.\nAdjusted: Moved the update button to the top-left of the Miscellaneous panel.\nFixed: Manual level selection in the arcade lobby could fail to enter the level.\nOptimized: Three-column Miscellaneous panel layout and lobby search experience.\nOptimized: Multilingual UI adaptation and automatic long-text shrinking.",
-          "ko-kr": "추가: MOD 언어에 일본어 지원을 추가했습니다.\n조정: 업데이트 버튼을 기타 패널 왼쪽 위로 이동했습니다.\n수정: 아케이드 로비에서 수동 스테이지 선택 후 스테이지에 진입하지 못하던 문제를 수정했습니다.\n최적화: 기타 패널의 3열 레이아웃과 로비 검색 환경을 개선했습니다.\n최적화: 다국어 UI 적응과 긴 텍스트 자동 축소를 개선했습니다.",
-          "ja-jp": "追加：MOD の日本語対応を追加しました。\n調整：アップデートボタンをその他パネルの左上に移動しました。\n修正：アーケードロビーの手動ステージ選択でステージに入れない問題を修正しました。\n最適化：その他パネルの3列レイアウトとロビー検索を改善しました。\n最適化：多言語 UI 対応と長いテキストの自動縮小を改善しました。"
+          "ko-kr": "추가: MOD 언어에 일본어 지원을 추가했습니다.\n조정: 업데이트 버튼을 기타 패널 왼쪽 위로 이동했습니다.\n수정: 아케이드 로비에서 수동 스테이지 선택 후 스테이지에 진입하지 못하던 문제를 수정했습니다.\n최적화: 기타 패널의 3열 레이아웃과 로비 검색 환경을 개선했습니다.\n최적화: 다국어 UI 적응과 긴 텍스트 자동 축소를 개선했습니다."
         },
         "tag": "v1.9.7",
         "version": "1.9.7",
@@ -574,6 +572,6 @@
     "url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v19.0/BepInEx.ConfigurationManager_BepInEx5_v19.0.zip",
     "size": 84258,
     "sha256": "eed83f6e6accbdd0c3771f3061a6ae05b979b9b9b8a00dead69aabc1bf5fe950",
-    "changelog": "# What's changed\r\n- IL2CPP - Upgrade to BepInEx6 be.785 (support games without legacy input)\r\n- Set KeyboardShortcut package as obsolete - remove it from your project and use KeyboardShortcut from BepInEx6 be.785+ instead\r\n- Added targetFrameworks to nuget package\r\n\r\n**Full Changelog**: https://github.com/BepInEx/BepInEx.ConfigurationManager/compare/v18.4.1...v19.0"
+    "changelog": "安装后需重启游戏，然后才能通过 P 键打开配置面板。"
   }
 }
