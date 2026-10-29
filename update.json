@@ -458,7 +458,27 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "占位",
+        "changelogs": {
+          "zh-cn": "优化❝MOD自更新体验。\n修复❝部分界面不显示换位按钮、或换位按钮无法点击的问题。\n修复❝在非主菜单场景复制加入链接时不弹出加入提示的问题。",
+          "en-us": "Optimized❝The MOD self-update experience.\nFixed❝The slot-swap button was missing or not clickable on some screens.\nFixed❝The join prompt did not appear when a join link was copied outside the main menu.",
+          "ko-kr": "최적화❝MOD 자체 업데이트 환경을 개선했습니다.\n수정❝일부 화면에서 자리 교체 버튼이 표시되지 않거나 눌리지 않던 문제를 수정했습니다.\n수정❝메인 메뉴가 아닌 화면에서 참가 링크를 복사해도 참가 안내가 표시되지 않던 문제를 수정했습니다.",
+          "ja-jp": "最適化❝MOD の自動更新体験を改善しました。\n修正❝一部の画面でポジション交換ボタンが表示されない、または押せない問題を修正しました。\n修正❝メインメニュー以外の画面で参加リンクをコピーしても参加案内が表示されない問題を修正しました。"
+        },
+        "tag": "v1.9.9",
+        "version": "1.9.9",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 409031,
+            "sha256": "9ba7af9596b49e79edce38ae3457db56208312a783d57bb18c491760d051eb80"
+          }
+        ],
+        "publishedAt": "2026-10-29T15:14:07Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
         "changelogs": {
           "zh-cn": "修复❝进入街机大厅等待玩家时手动选关列表不显示的问题。\n优化❝剪贴板加入链接弹窗体验。",
           "en-us": "Fixed❝The manual level selection list was not shown in the arcade lobby while waiting for players.\nOptimized❝Clipboard join-link dialog experience.",
@@ -479,7 +499,6 @@
         "minResourceVersion": "1.0.3",
         "resourceFormat": 1,
         "forceUpdate": false,
-        "changelog": "占位",
         "changelogs": {
           "zh-cn": "新增：MOD 语言增加日本语支持。\n调整：更新按钮移到杂项面板左上角。\n修复：街机大厅手动选关后无法进入关卡的问题。\n优化：杂项面板三列布局和大厅搜索体验。\n优化：多语言界面适配与长文本自动缩小。",
           "en-us": "Added: Japanese language support for the MOD.\nAdjusted: Moved the update button to the top-left of the Miscellaneous panel.\nFixed: Manual level selection in the arcade lobby could fail to enter the level.\nOptimized: Three-column Miscellaneous panel layout and lobby search experience.\nOptimized: Multilingual UI adaptation and automatic long-text shrinking.",
