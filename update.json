@@ -459,6 +459,27 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "新增❝房间链接旁增加“刷新房间状态”，方便加入失败后重试。\n修复❝一键退出街机后房间仍可能保留公开匹配状态的问题。\n修复❝与《厨房暖暖》一起使用时的厨师状态同步冲突。\n兼容❝大厅玩家卡片的换厨师按钮支持切换《厨房暖暖》的自定义厨师。\n兼容❝随机位置开启时保留随机分配，关闭后恢复街机 MOD 的换位计划。",
+          "en-us": "Added❝A Refresh Room State button beside the room link to help guests retry failed joins.\nFixed❝Rooms could retain public matchmaking state after leaving Arcade with one click.\nFixed❝A chef state synchronization conflict when using DIYChef with the Arcade MOD.\nCompatible❝Lobby player-card chef buttons can cycle through DIYChef custom chefs.\nCompatible❝Random positions are preserved when enabled; disabling them restores the Arcade MOD's slot-swap plan.",
+          "ko-kr": "추가❝방 링크 옆에 방 상태 새로 고침 버튼을 추가하여 참가 실패 후 다시 시도할 수 있도록 했습니다.\n수정❝원클릭으로 아케이드를 나간 뒤에도 방에 공개 매칭 상태가 남을 수 있던 문제를 수정했습니다.\n수정❝아케이드 MOD와 DIYChef를 함께 사용할 때 발생하던 요리사 상태 동기화 충돌을 수정했습니다.\n호환❝대기실 플레이어 카드의 요리사 변경 버튼으로 DIYChef의 사용자 지정 요리사를 선택할 수 있습니다.\n호환❝무작위 위치를 켜면 무작위 배정을 유지하고, 끄면 아케이드 MOD의 자리 변경 계획을 다시 적용합니다.",
+          "ja-jp": "追加❝ルームリンクの隣にルーム状態の更新ボタンを追加し、参加に失敗したゲストの再試行を支援します。\n修正❝ワンクリックでアーケードを退出した後も、公開マッチング状態が残る場合がある問題を修正しました。\n修正❝アーケード MOD と DIYChef を併用した際のシェフ状態の同期競合を修正しました。\n互換❝ロビーのプレイヤーカードにあるシェフ変更ボタンで DIYChef のカスタムシェフを選択できます。\n互換❝ランダム配置が有効な間はその割り当てを維持し、無効にするとアーケード MOD の位置変更プランに戻ります。"
+        },
+        "tag": "v2.0.0",
+        "version": "2.0.0",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 415604,
+            "sha256": "c914f067db0212cf82d81e7b4121736e9ef90fbe699c4b9062376637f8ca7fb8"
+          }
+        ],
+        "publishedAt": "2026-11-15T06:14:54Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "优化❝MOD自更新体验。\n修复❝部分界面不显示换位按钮、或换位按钮无法点击的问题。\n修复❝在非主菜单场景复制加入链接时不弹出加入提示的问题。",
           "en-us": "Optimized❝The MOD self-update experience.\nFixed❝The slot-swap button was missing or not clickable on some screens.\nFixed❝The join prompt did not appear when a join link was copied outside the main menu.",
           "ko-kr": "최적화❝MOD 자체 업데이트 환경을 개선했습니다.\n수정❝일부 화면에서 자리 교체 버튼이 표시되지 않거나 눌리지 않던 문제를 수정했습니다.\n수정❝메인 메뉴가 아닌 화면에서 참가 링크를 복사해도 참가 안내가 표시되지 않던 문제를 수정했습니다.",
