@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "修复❝刷新房间状态按钮不可点的问题。",
+          "zh-tw": "修復❝無法點擊刷新房間狀態按鈕的問題。",
+          "en-us": "Fixed❝The Refresh Room State button could not be clicked.",
+          "ko-kr": "수정❝방 상태 새로 고침 버튼을 클릭할 수 없던 문제를 수정했습니다.",
+          "ja-jp": "修正❝ルーム状態の更新ボタンをクリックできなかった問題を修正しました。"
+        },
+        "tag": "v2.0.1",
+        "version": "2.0.1",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 416398,
+            "sha256": "00eee70324e390f3f3261d075db5cc8ace036331c3ef468ab4200e32f4d4a761"
+          }
+        ],
+        "publishedAt": "2026-11-15T18:47:39Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "新增❝房间链接旁增加“刷新房间状态”，方便加入失败后重试。\n修复❝一键退出街机后房间仍可能保留公开匹配状态的问题。\n修复❝与《厨房暖暖》一起使用时的厨师状态同步冲突。\n兼容❝大厅玩家卡片的换厨师按钮支持切换《厨房暖暖》的自定义厨师。\n兼容❝随机位置开启时保留随机分配，关闭后恢复街机 MOD 的换位计划。",
           "en-us": "Added❝A Refresh Room State button beside the room link to help guests retry failed joins.\nFixed❝Rooms could retain public matchmaking state after leaving Arcade with one click.\nFixed❝A chef state synchronization conflict when using DIYChef with the Arcade MOD.\nCompatible❝Lobby player-card chef buttons can cycle through DIYChef custom chefs.\nCompatible❝Random positions are preserved when enabled; disabling them restores the Arcade MOD's slot-swap plan.",
           "ko-kr": "추가❝방 링크 옆에 방 상태 새로 고침 버튼을 추가하여 참가 실패 후 다시 시도할 수 있도록 했습니다.\n수정❝원클릭으로 아케이드를 나간 뒤에도 방에 공개 매칭 상태가 남을 수 있던 문제를 수정했습니다.\n수정❝아케이드 MOD와 DIYChef를 함께 사용할 때 발생하던 요리사 상태 동기화 충돌을 수정했습니다.\n호환❝대기실 플레이어 카드의 요리사 변경 버튼으로 DIYChef의 사용자 지정 요리사를 선택할 수 있습니다.\n호환❝무작위 위치를 켜면 무작위 배정을 유지하고, 끄면 아케이드 MOD의 자리 변경 계획을 다시 적용합니다.",
