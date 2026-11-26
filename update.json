@@ -459,6 +459,28 @@
         "resourceFormat": 1,
         "forceUpdate": false,
         "changelogs": {
+          "zh-cn": "优化启动时的检测更新流程",
+          "zh-tw": "最佳化啟動時的更新檢查流程",
+          "en-us": "Improved the update check at startup.",
+          "ko-kr": "시작 시 업데이트 확인 절차를 개선했습니다.",
+          "ja-jp": "起動時のアップデート確認処理を改善しました。"
+        },
+        "tag": "v2.0.4",
+        "version": "2.0.4",
+        "assets": [
+          {
+            "name": "HostUtilities.zip",
+            "size": 452842,
+            "sha256": "06b682346c89fc4e0ecad67c49dee912769ccc474006c574cdde8716e9861f29"
+          }
+        ],
+        "publishedAt": "2026-11-26T13:38:35Z"
+      },
+      {
+        "minResourceVersion": "1.0.3",
+        "resourceFormat": 1,
+        "forceUpdate": false,
+        "changelogs": {
           "zh-cn": "修复主菜单一键退出无响应的问题：客机可以退房，主机可以解散房间。",
           "zh-tw": "修正主選單一鍵退出沒有反應的問題：客機可以離開房間，主機可以解散房間。",
           "en-us": "Fixed an issue where Quick Exit did not respond in the main menu. Clients can now leave the lobby, and hosts can disband it.",
@@ -540,27 +562,6 @@
           }
         ],
         "publishedAt": "2026-11-15T06:14:54Z"
-      },
-      {
-        "minResourceVersion": "1.0.3",
-        "resourceFormat": 1,
-        "forceUpdate": false,
-        "changelogs": {
-          "zh-cn": "优化❝MOD自更新体验。\n修复❝部分界面不显示换位按钮、或换位按钮无法点击的问题。\n修复❝在非主菜单场景复制加入链接时不弹出加入提示的问题。",
-          "en-us": "Optimized❝The MOD self-update experience.\nFixed❝The slot-swap button was missing or not clickable on some screens.\nFixed❝The join prompt did not appear when a join link was copied outside the main menu.",
-          "ko-kr": "최적화❝MOD 자체 업데이트 환경을 개선했습니다.\n수정❝일부 화면에서 자리 교체 버튼이 표시되지 않거나 눌리지 않던 문제를 수정했습니다.\n수정❝메인 메뉴가 아닌 화면에서 참가 링크를 복사해도 참가 안내가 표시되지 않던 문제를 수정했습니다.",
-          "ja-jp": "最適化❝MOD の自動更新体験を改善しました。\n修正❝一部の画面でポジション交換ボタンが表示されない、または押せない問題を修正しました。\n修正❝メインメニュー以外の画面で参加リンクをコピーしても参加案内が表示されない問題を修正しました。"
-        },
-        "tag": "v1.9.9",
-        "version": "1.9.9",
-        "assets": [
-          {
-            "name": "HostUtilities.zip",
-            "size": 409031,
-            "sha256": "9ba7af9596b49e79edce38ae3457db56208312a783d57bb18c491760d051eb80"
-          }
-        ],
-        "publishedAt": "2026-10-29T15:14:07Z"
       }
     ]
   },
